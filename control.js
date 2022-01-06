@@ -1,7 +1,7 @@
 function controlKeyboard(player, jump, left, right, windL, windR){
     switch(true){
         case jump.isDown: 
-            if(player.body.wasTouching.down || player.body.onFloor()) {
+            if(true /*player.body.wasTouching.down || player.body.onFloor()*/) {
                 player.setVelocityY(-150);
                 if(windR){
                     player.setVelocityX(220);
